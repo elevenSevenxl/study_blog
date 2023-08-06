@@ -12,14 +12,16 @@ heroImageStyle:
     boxShadow: '0 15px 18px rgba(0,0,0,0.2)'
   }
 heroText: 没有蜡笔的小新
-heroFullScreen: false
+heroFullScreen: true
+bgImage: /bg2.jpg
+# bgImageStyle: { background-size: cover }
 tagline: 总有人间一两风，填我十万八千梦
 article: false
 projects:
-  - icon: react
-    name: RaETable
-    desc: 一款开箱即用的antd表格组件库
-    link: https://mmdctjj.github.io/raetable
+  # - icon: react
+  #   name: RaETable
+  #   desc: 一款开箱即用的antd表格组件库
+  #   link: https://mmdctjj.github.io/raetable
   - icon: article
     name: console-loader
     desc: 自动清除其他开发者console的loader
@@ -27,7 +29,3 @@ projects:
 
 footer: <a href="https://icp.gov.moe/?keyword=20231319" target="_blank">萌 ICP 备 20231319 号</a>
 ---
-
-<!-- ![mmdctjj.jpg](/mmdctjj.jpg?) -->
-
-大家好，我是萌萌哒草头将军，欢迎关注我。

@@ -34,15 +34,15 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    description: "一个前端开发者",
+    description: "Keep Smile and Make Effort.",
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/elevenSevenxl",
-      Email: "1551536781@qq.com",
+      // Email: "1551536781@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
-      // Gitee: "https://example.com",
+      Gitee: "https://gitee.com/sunyxl",
       // Gmail: "mailto:info@example.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
@@ -50,7 +50,7 @@ export default hopeTheme({
       // Linkedin: "https://example.com",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
-      QQ: "1551536781",
+      // QQ: "1551536781",
       // Qzone: "https://example.com",
       // Reddit: "https://example.com",
       // Rss: "https://example.com",
@@ -83,11 +83,11 @@ export default hopeTheme({
       index: true
     },
 
-    comment: {
-      // You should generate and use your own comment service
-      provider: "Waline",
-      serverURL: "https://waline-comment.vuejs.press",
-    },
+    // comment: {
+    //   // You should generate and use your own comment service
+    //   provider: "Waline",
+    //   serverURL: "https://waline-comment.vuejs.press",
+    // },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
