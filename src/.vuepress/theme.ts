@@ -38,7 +38,7 @@ export default hopeTheme({
     intro: "/intro.html",
     medias: {
       GitHub: "https://github.com/elevenSevenxl",
-      // Email: "1551536781@qq.com",
+      Email: "1551536781@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
@@ -83,11 +83,16 @@ export default hopeTheme({
       index: true
     },
 
-    // comment: {
-    //   // You should generate and use your own comment service
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+    comment: {
+      // You should generate and use your own comment service
+      // provider: "Waline",
+      // serverURL: "https://waline-comment.vuejs.press",
+      provider: "Giscus",
+      repo: "elevenSevenxl/blog-comments",
+      repoId: "R_kgDOKEYmqg", // 替换下
+      category: "Announcements",
+      categoryId: "DIC_kwDOKEYmqs4CYaJ8" // 替换下
+    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {

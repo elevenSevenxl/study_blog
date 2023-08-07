@@ -22,10 +22,10 @@ projects:
   #   name: RaETable
   #   desc: 一款开箱即用的antd表格组件库
   #   link: https://mmdctjj.github.io/raetable
-  - icon: article
-    name: console-loader
-    desc: 自动清除其他开发者console的loader
-    link: https://github.com/mmdctjj/remove-others-console-loader
+  # - icon: article
+  #   name: console-loader
+  #   desc: 自动清除其他开发者console的loader
+  #   link: https://github.com/mmdctjj/remove-others-console-loader
 
 footer: <a href="https://icp.gov.moe/?keyword=20231319" target="_blank">萌 ICP 备 20231319 号</a>
 ---
