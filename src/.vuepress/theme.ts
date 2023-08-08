@@ -29,7 +29,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "<a href='https://icp.gov.moe/?keyword=20231319' target='_blank'>萌 ICP 备 20231319 号</a>",
 
   displayFooter: true,
 
@@ -50,7 +50,7 @@ export default hopeTheme({
       // Linkedin: "https://example.com",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
-      // QQ: "1551536781",
+      QQ: "1551536781",
       // Qzone: "https://example.com",
       // Reddit: "https://example.com",
       // Rss: "https://example.com",
