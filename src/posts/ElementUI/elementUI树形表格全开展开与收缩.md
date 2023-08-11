@@ -3,6 +3,7 @@ title: elementUI树形表格全开展开与收缩
 cover: /assets/images/cover5.png
 isTimeLine: true
 date: 2023-08-10
+# order: 3
 # sticky: true
 # star: true
 footer: <a href="https://icp.gov.moe/?keyword=20231319" target="_blank">萌 ICP 备 20231319 号</a>
@@ -13,58 +14,8 @@ tag:
   - ElementUI
 ---
 
-### elementUI 树形表格全开展开与收缩
-
-#### 1. 页面效果
-
-![image-20230809141537186](./images/content1.png)
-
-![image-20230809141515029](./images//content2.png)
-
-#### 2.页面代码
-
-```js
-<el-table
-    ref="dataTreeList"
-    size="mini"
-    :header-cell-style="{ background: '#ebf8f8' }"
-    :data="menuList"
-    height="100%"
-    row-key="id"
-    border
-    :default-expand-all="isExpand"
-    :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
-   >
-      <el-table-column prop="name" label="菜单名称"> </el-table-column>
-      <el-table-column prop="code" label="菜单编码"> </el-table-column>
-      <el-table-column prop="seq" label="菜单序号"> </el-table-column>
-      <el-table-column align="center" width="270" prop="name" label="操作">
-         <template #default="{row}">
-            <div class="btn">
-               <el-button
-                 type="primary"
-                 size="mini"
-                 @click="handleDialog(row, 'add')"
-               >
-                  添加
-                </el-button>
-                <el-button
-                  type="info"
-                  size="mini"
-                  @click="handleDialog(row, 'edit')"
-                >
-                  编辑
-                </el-button>
-                <el-button type="danger" size="mini" @click="remove(row)">
-                  删除
-               </el-button>
-            </div>
-        </template>
-    </el-table-column>
-</el-table>
-```
-
-#### 3. 全部展开和收缩
+---
+### 1. 全部展开和收缩
 
 根据 element-ui 文档的 toggleRowExpansion
 ![](./images/content3.png)
@@ -90,3 +41,46 @@ methods: {
     },
   },
 ```
+
+
+### 2. 页面效果
+
+![](./images/content1.png)
+
+![](./images//content2.png)
+
+### 3.页面代码
+
+```html
+<el-table
+  ref="dataTreeList"
+  size="mini"
+  :header-cell-style="{ background: '#ebf8f8' }"
+  :data="menuList"
+  height="100%"
+  row-key="id"
+  border
+  :default-expand-all="isExpansion"
+  :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
+>
+  <el-table-column prop="name" label="菜单名称"> </el-table-column>
+  <el-table-column prop="code" label="菜单编码"> </el-table-column>
+  <el-table-column prop="seq" label="菜单序号"> </el-table-column>
+  <el-table-column align="center" width="270" prop="name" label="操作">
+    <template #default="{row}">
+      <div class="btn">
+        <el-button type="primary" size="mini" @click="handleDialog(row, 'add')">
+          添加
+        </el-button>
+        <el-button type="info" size="mini" @click="handleDialog(row, 'edit')">
+          编辑
+        </el-button>
+        <el-button type="danger" size="mini" @click="remove(row)">
+          删除
+        </el-button>
+      </div>
+    </template>
+  </el-table-column>
+</el-table>
+```
+---
